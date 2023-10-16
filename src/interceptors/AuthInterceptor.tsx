@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 import { checkToken, getToken, removeToken } from "../common/api/AuthAPI";
 
 const instance = axios.create({
-  baseURL: "http://localhost:4200",
+  baseURL: "ToDoList-env.eba-amqimvmx.us-east-1.elasticbeanstalk.com",
 });
 
 export const AxiosInterceptor = ({
