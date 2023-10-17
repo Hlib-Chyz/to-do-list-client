@@ -67,7 +67,8 @@ export const AxiosInterceptor = ({
     );
 
     setConfigured(true);
-    if (location.pathname !== "/login") {
+    // add path where you need check token
+    if (([] as string[]).includes(location.pathname)) {
       checkUserProfile();
     }
     return () => {
